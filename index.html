@@ -1,14 +1,18 @@
-<HTML style="background-color: dimgrey;">
-    <head>
+<HTML style="background-color: rgb(124, 124, 124);">
+    <head class="cursor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mycss_mobilestyle.css" media="max-width:600px">
         <link rel="stylesheet" href="myccs_webstyle.css">
     </head>
+<body>
+
     <h1 id="headerpart1" class="pushover styling">  WELCOME </h1>
     <div class="pushover styling">
-        <img  src=https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3R4MHV6Yjd2aHlsZnc5YzM5dWdrMm8zeTg1N2x5ZWlnZGxsMzN6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UoSj1rlUdz6dm0diEX/giphy.gif>
+        <img  id="gif" src=https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3R4MHV6Yjd2aHlsZnc5YzM5dWdrMm8zeTg1N2x5ZWlnZGxsMzN6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UoSj1rlUdz6dm0diEX/giphy.gif>
     </div>
-    <h1 class="pushover styling">
+    <h1  id ="headerpart1" class="pushover styling">
         Bored? Go learn something new!
-            <form action="https:google.com/search">
+            <form action="https:google.com/search" class="styles">
                 <!--form element. can specify types of input-->
                 <label>Search:</label>
                 <input name="q" type ="text"/>
@@ -107,32 +111,34 @@
     <h2>
         Programming
     </h2>
-    <table>
-        <tr>
-            <th>
-                Language
-            </th>
-            <th>
-                Experience
-            </th>
-        </tr>
-        <tr>
-            <td>
-                Java
-            </td>
-            <td>
-                3 years worth of classes
-            </td>
-        </tr>
-        <tr>
-            <td>
-                C++
-            </td>
-            <td>
-                1 class taken
-            </td>
-        </tr>
-    </table>
+    <div class="box_table">
+        <table>
+            <tr>
+                <th>
+                    Language
+                </th>
+                <th>
+                    Experience
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Java
+                </td>
+                <td>
+                    3 years worth of classes
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    C++
+                </td>
+                <td>
+                    1 class taken
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 <div id="Interests" class="pushover">
     <h2>
@@ -167,7 +173,7 @@
         </iframe>
     </p>
     <p>
-        Favorite Movie: Godzilla
+        Favorite Movie: <span style="color: rgb(25, 212, 25); font-weight: 200;">Godzilla</span>
         <iframe width="560" height="315" 
         src="https://www.youtube.com/embed/GuV-Vb1PlSU?si=-uU7rvtcQN7EcrQa"
         title="YouTube video player" frameborder="0" 
@@ -182,4 +188,5 @@
 <div class="pushover styling">
     <img src="shark.gif" id="gif">
 </div>
+</body>
 </HTML>

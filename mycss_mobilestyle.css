@@ -18,12 +18,12 @@
         padding:0;
         width:100%;
         list-style-type: none;
-        position:fixed;
+        position:sticky;
         background-color:black
     }
     li{
         display:inline;
-        font-size:50%;
+        font-size:60%;
         padding:2%;
         
     }

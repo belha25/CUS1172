@@ -1,25 +1,60 @@
+@media screen {
+    
+}
+@media screen {
+    
+}
+@media print{
+
+}
+
+
+
+
 /*tag selector*/
 h2{
     color:darkturquoise;
-    text-align:center
+    text-align:left
+}
+p{
+    color: blanchedalmond;
+    text-align: left;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    z-index: 0;
+    top:0;
+    padding: 0%;
+    width: 200px;
+    height: 300%;
+    position:fixed;
+    background-color:black
+}
+li{
+    font-size:200%
 }
 a:link{
     color:aquamarine
 }
 a:visited{
-    color:coral
+    color:gold
 }
 a:hover{
-    color:darksalmon
+    color:lightyellow
 }
 a:active{
-    color:lightgreen
+    color:navajowhite
 }
 img.center{
     display:block;
     margin-left: auto;
     margin-right: auto;
     width: auto;
+}
+.pushover{
+    margin-left: 200px;
+    padding-left: 10px;
 }
 video{
     width:20%;
@@ -31,13 +66,7 @@ video{
     font-family: 'Times New Roman', Times, serif; 
     font-size:300%
 }
-#headerpart2{
-    color: floralwhite; 
-    font-family: 'Times New Roman', Times, serif; 
-    font-size: 300%
-}
 /*class selector*/
-p.styling{
-    color:white;
-    text-align:center
+.styling{
+   text-align: center;
 }

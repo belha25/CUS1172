@@ -4,7 +4,8 @@
     }
 }
 body{
-    cursor:url("cursor.png"), auto
+    cursor:url("cursor.png"), auto;
+    background-color: rgb(124, 124, 124)
 }
 /*tag selector*/
 h2{

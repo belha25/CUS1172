@@ -72,10 +72,10 @@ img.center{
 .styling{
     text-align: center;
  }
- .cursor{
-    cursor:url("cursor.png"), auto
-
- }
+.youtube iframe{
+    width: 100%;
+    height: 100%;
+}
 /*id selector*/
 
 form.styles{

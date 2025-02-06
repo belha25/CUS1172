@@ -31,7 +31,8 @@ li{
     font-size:200%
 }
 a:link{
-    color:aquamarine
+    color:aquamarine;
+    text-decoration: none;
 }
 a:visited{
     color:gold

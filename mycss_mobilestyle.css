@@ -3,32 +3,33 @@
         display: none;
     }
 }
-@media only screen and (max-width:700px){
     body{
-        background-color: red;
+        background-color:  rgb(124, 124, 124);
     }
     h2{
         color:darkturquoise;
-        text-align:left
     }
     p{
         color: blanchedalmond;
-        text-align: left;
     }
     ul{
-        list-style-type: none;
-        width: 20%;
-        height: 20%;
-        position:fixed;
         top:0;
+        margin:0;
+        padding:0;
+        width:100%;
+        list-style-type: none;
+        position:fixed;
         background-color:black
     }
     li{
         display:inline;
-        font-size:20%
+        font-size:50%;
+        padding:2%;
+        
     }
     a:link{
-        color:aquamarine
+        color:aquamarine;
+        text-decoration:none
     }
     a:visited{
         color:gold
@@ -69,8 +70,8 @@
         text-align: center;
      }
     .youtube iframe{
-        width: 50%;
-        height: 25%;
+        height:10%;
+        width: 25%;
     }
     form.styles{
         input[type=text]{
@@ -87,11 +88,11 @@
     #headerpart1{
         color:aquamarine; 
         font-family: 'Times New Roman', Times, serif; 
-        font: size 50%
+        font: size 20%
     }
     #gif{
-        width:25%
+        height: 30%
     }
     
     
-}
+

@@ -66,6 +66,9 @@ video{
     font-family: 'Times New Roman', Times, serif; 
     font-size:300%
 }
+#gif{
+    width:25%
+}
 /*class selector*/
 .styling{
    text-align: center;

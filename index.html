@@ -1,122 +1,165 @@
 <HTML>
     <head class="cursor">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" media="screen and (min-width:701px)" href="./myccs_webstyle.css">
-        <link rel="stylesheet" media="screen and (max-width:700px)" href="./mycss_mobilestyle.css">
+        <link rel="stylesheet" media="screen and (min-width:701px)" href="./bootsrapcss.css">
+        <link rel="stylesheet" media="screen and (max-width:700px)" href="./bootstrapcss_mobile.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <style>
           body{
-            background-color: rgb(124, 124, 124);
+            background-color: rgb(143, 184, 234);
           }
         </style>
     </head>
-<body>
 
-    <h1 id="headerpart1" class="pushover styling">  WELCOME </h1>
-    <div class="pushover styling screen_only">
-        <img  id="gif" src=https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3R4MHV6Yjd2aHlsZnc5YzM5dWdrMm8zeTg1N2x5ZWlnZGxsMzN6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UoSj1rlUdz6dm0diEX/giphy.gif>
+<!--navbar start-->
+    <nav class="navbar navbar-custom sticky-top">
+        <a class="navbar-brand" href="#"> Navigation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon" style="background-color: white;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav screen_only">
+                <li class="nav-item">
+                    <a class="nav-link" href="#About Me">
+                        About Me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Education">
+                    Education
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Experience">
+                    Experience
+                </a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#My Works">
+                        My Works
+                    </a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#Programming">
+                        Programming
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Interests">
+                    Interests
+                </a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#Favorites">
+                    Favorites
+                </a>
+               </li>
+            </ul>
+        </div>
+    </nav>
+<!--navbar end-->
+
+<!--added more styling, was unhappy with previous colors-->
+<div id="backgroundimg" style="background-image: url(background.png);">
+    <h1 id="headerpart1" class="styling">  WELCOME </h1>
+    <div class="text-center styling screen_only">
+        <img  id="gif" src=https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3R4MHV6Yjd2aHlsZnc5YzM5dWdrMm8zeTg1N2x5ZWlnZGxsMzN6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UoSj1rlUdz6dm0diEX/giphy.gif class="rounded-circle">
     </div>
     <h1  id ="headerpart1" class="pushover styling">
         Bored? Go learn something new!
             <form action="https:google.com/search" class="styles">
                 <!--form element. can specify types of input-->
-                <label style="color:darksalmon">Search:</label>
+                <label style="color:rgb(255, 206, 116)">Search:</label>
                 <input name="q" type ="text"/>
                 <input type="submit"/>
                 <!--when user puts in submit, it must be sent somewhere
                 this results in a google search-->
             </form>
     </h1>
-    <ul class="screen_only">
-        <li>
-            <a href="#About Me">
-                About Me
-            </a>
-        </li>
-      <li>
-        <a href="#Education">
-            Education
-        </a>
-      </li>
-       <li>
-        <a href="#Experience">
-            Experience
-        </a>
-       </li>
-       <li>
-            <a href="#My Works">
-                My Works
-            </a>
-       </li>
-        <li>
-            <a href="#Programming">
-                Programming
-            </a>
-        </li>
-       <li>
-        <a href="#Interests">
-            Interests
-        </a>
-       </li>
-       <li>
-        <a href="#Favorites">
-            Favorites
-        </a>
-       </li>
-    </ul>
-    <div id="About Me" class="pushover">
-        <h2 >
-             About Me:
-         </h2>
-        <body>
-          <P >
-             Name: Abby
-         </P>
-         <P >
-             Major: Computer Science with Cyber Security Concentration
-        </P> 
-        <p >
-            Languages: 1 year Russian Language, Studying Chinese
-        </p>
-    </body>
+</div>
+<!-- ends the background image here so it looks like a gradient-->
+
+    <div id="About Me">
+        <div class="col-sm-4">
+            <h2 >
+                About Me:
+            </h2>
+            <div class="card bg-dark">
+                <img class="card-img-top" src="https://www.atlantishotel.com/wp-content/uploads/2021/07/thresher.jpg">
+                <p class="card-text">
+                    My name is Abbygayle, I am a junior at St. John's but graduating this year! I've got a few years of Mandarin Chinese under my belt, and I've currently been learning Russian for about a year now. I love sharks and the ocean so much!
+                </p>
+            </div>
+        </div>
     </div>
-    <div id="Education" class="pushover">
+    <div id="Education">
+        <div class="col">
+            <h2>
+                Education:
+            </h2>
+                <p>
+                    Attended CSIHS for 4 years, chosen from peers to give commenecement speech.
+                </p> 
+                <p>
+                    Took three years of Mandarin Chinese
+                </p> 
+                <p>
+                    Currently attending <a href=https://www.stjohns.edu target="_blank">SJU</a>, completed one years worth of Russian language, graduating early with honors.
+                </p>
+        </div>
+    </div>
+    <div id="Experience">
+        <div class="col">
+            <h2>
+                Work Experience
+            </h2>
+            <div class="row row-cols-2">
+                <div class="col-3">
+                    <p>
+                        I currently work as an office assistant at the St. John's Law School Clinics, helping students get pro-bono hours and provide free legal services to the elderly and/or impoverished of Queens.
+                    </p>
+                </div>
+                <div clas="col-9">
+                    <img src="https://images.law.com/contrib/content/uploads/sites/292/2023/01/St.-John_s-University-School-of-Law-Edit-767x633-1.jpg" width="300px" class="img-thumbnail">
+                </div>
+            </div>
+
+        </div>
+       
+  
+</div>
+<div id="My Works" class="col">
+    <div class="col">
         <h2>
-            Education:
+            My Works
         </h2>
-            <p>
-                Attended CSIHS for 4 years, chosen from peers to give commenecement speech.
-            </p> 
-            <p>
-                Took three years of Mandarin Chinese
-            </p> 
-            <p>
-                Currently attending <a href=https://www.stjohns.edu target="_blank">SJU</a>, completed one years worth of Russian language, graduating early with honors.
-            </p>
     </div>
-    <div id="Experience" class="pushover">
-        <h2>
-        Work Experience
-    </h2>
-    <p>
-        I currently work as an office assistant at the St. John's Law School Clinics, helping students get pro-bono hours and provide free legal services to the elderly and/or impoverished of Queens.
-    </p>
+    <div class="row row-cols-3">
+        <div class="col">
+            <p>
+                <a href="#" >This page!</a>
+            </p>
+        </div>
+        <div class="col">
+            <p>
+                <a href="milestone1/oldprofilepage.html">Old Version</a>
+            </p>
+        </div>
+        <div class="col">
+            <P>
+                <a href="milestone2/index.html">Old HTML and CSS Version</a>
+            </P>
+        </div>
+    </div>
 </div>
-<div id="My Works" class="pushover">
-    <h2>
-        My Works
-    </h2>
-    <p>
-        <a href="#" >This page!</a>
-    </p>
-    <p>
-        <a href=profilepage/oldprofilepage.html>Old Version</a>
-    </p>
-</div>
-<div id="Programming" class="pushover">
+<div id="Programming" class="col">
     <h2>
         Programming
     </h2>
-    <div class="box_table">
+    <div class="box_table table-sm">
         <table>
             <tr>
                 <th>
@@ -145,79 +188,98 @@
         </table>
     </div>
 </div>
-<div id="Interests" class="pushover">
-    <h2>
-        Interests
-    </h2>
-    <p>
-        I enjoy reading novels and nonfiction works, especially on topics such as history(modern and Ancient) and science(genetics, ecology).
-    </p>
-    <p>
-        My career interests are mainly in the legal side of technology and how the use of it may violate an individual's rights. I want to go to law school and work on proposing regulations on data privacy, usage of AI generated content based of an individual's likeness, and the use of developing technologies to commit crimes.
-    </p>
+<div id="Interests" div class="col">
+
+        <div class="col">
+            <h2>
+                Interests
+            </h2>
+        </div>
+        <div class="row row-cols-2">
+            <div class="col align-text-top">
+                <p>
+                I enjoy reading novels and nonfiction works, especially on topics such as history(modern and Ancient) and science(genetics, ecology).
+                </p>
+            </div>
+            <div class="col align-text-top">
+                <p>
+                My career interests are mainly in the legal side of technology and how the use of it may violate an individual's rights. I want to go to law school and work on proposing regulations on data privacy, usage of AI generated content based of an individual's likeness, and the use of developing technologies to commit crimes.
+                </p>
+            </div>
+
+    </div>
+  
 </div>
-<div id="Favorites" class="pushover">
+<div id="Favorites" class="col">
     <h2>
         Favorites
     </h2>
-    <p>
-        <div class="youtube iframe">
-            <div>
-                <p>
-                    Favorite Show: Law and Order SVU
-                </p>
-            </div>
-            <div class="screen_only">
+    <!--here i made all the favorites line up next to one another-->
+        <div class="row">
+            <p>
+                <div class="col youtube iframe">
+                    <div>
+                        <p>
+                            Favorite Show: Law and Order SVU
+                        </p>
+                    </div>
+                    <div class="screen_only">
+                        <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/mubehuTjMgM?si=4y_LDP38D6D_dQlw" title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                 </div>
+                
+            </p>
+            <p>
+                <div class="col youtube iframe">
+                    <div>
+                        <p>
+                            Favorite Song: Ship to Wreck- Florence and the Machine
+                        </p>
+                    </div>
+                    <div class="screen_only">
+                        <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/uiSNrq8lap4?si=iVl44RprC9EgkAK-" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    </div>
+                </div>
+              
+            </p>
+            <p>
+                <div class="col youtube iframe">
+                    <div>
+                        <p>
+                            Favorite Movie: <span style="color: rgb(2, 50, 2); font-weight: 200;">Godzilla</span>
+                        </p>
+                    </div>
+                <div class ="screen_only">
                 <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/mubehuTjMgM?si=4y_LDP38D6D_dQlw" title="YouTube video player" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                src="https://www.youtube.com/embed/GuV-Vb1PlSU?si=-uU7rvtcQN7EcrQa"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
-            </div>
-         </div>
-        
-    </p>
-    <p>
-        <div class="youtube iframe">
-            <div>
+                </div>
+                 </div>
+            </p>
+            <div class="col">
                 <p>
-                    Favorite Song: Ship to Wreck- Florence and the Machine
+                    Favorite Website: <a href="https://www.pinterest.com/">Pinterest! I like making different boards and looking at different images </a>  
                 </p>
             </div>
-            <div class="screen_only">
-                <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/uiSNrq8lap4?si=iVl44RprC9EgkAK-" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-            </div>
+
         </div>
-      
-    </p>
-    <p>
-        <div class="youtube iframe">
-            <div>
-                <p>
-                    Favorite Movie: <span style="color: rgb(25, 212, 25); font-weight: 200;">Godzilla</span>
-                </p>
-            </div>
-        <div class ="screen_only">
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/GuV-Vb1PlSU?si=-uU7rvtcQN7EcrQa"
-        title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-        </div>
-         </div>
-    </p>
-    <p>
-        Favorite Website: <a href="https://www.pinterest.com/">Pinterest! I like making different boards and looking at different images </a>  
-    </p>
 </div>
-<div class="pushover styling screen_only">
-    <img src="shark.gif" id="gif">
+<div class="styling screen_only">
+    <a data-toggle="tooltip" title="I love sharks!">
+        <img src="shark.gif" id="gif">
+    </a>
 </div>
 </body>
 </HTML>

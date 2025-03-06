@@ -1,0 +1,25 @@
+body{
+    cursor:url("cursor.png"), auto;
+    background-color: rgb(143, 184, 234);
+}
+form.styles{
+    input[type=text]{
+        background-color: rgb(255, 255, 255);
+        color: rgb(110, 179, 115);
+    }
+    input[type=submit]{
+        border-style: inset;
+        border-color: rgb(110, 179, 115);
+        border-width: 2px;
+        background-color: rgb(110, 179, 115);
+    }
+}
+li.low-priority{
+    background-color: forestgreen;
+}
+li.med-priority{
+    background-color: darkgoldenrod;
+}
+li.high-priority{
+    background-color: crimson;
+}

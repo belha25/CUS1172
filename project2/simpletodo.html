@@ -14,16 +14,19 @@
         </ul>
         <form id="new-task">
                 <input id ="task-title" autocomplete="off" autofocus placeholder="New Task" type="text">
-                <select id ="task-priority" name="priority">
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                </select>
-                <input type="radio" id="Pending" name="task-status" value="Pending">
-                <label for="Pending">In Progress</label>
-                <input type="radio" id="Completed" name="task-status" value="Completed">
-                <label for="Completed">Completed</label>
-                <input id="submit" type="submit">
+                <div class="button-group">
+                    <select id ="task-priority" name="priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <input type="radio" id="Pending" name="task-status" value="Pending">
+                    <label for="Pending">In Progress</label>
+                    <input type="radio" id="Completed" name="task-status" value="Completed">
+                    <label for="Completed">Completed</label>
+                    <input id="submit" type="submit">
+                </div>
+
         </form>
     </body>
 </html>

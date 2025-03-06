@@ -12,11 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
    <span> Priority ${task_priority}</span>
    <span> Status ${task_status}</span>
    <button class="remove">Remove</button>
-   <button class="completed">Completed</button>`
+   <button class="completed">Completed</button>`;
 
-//Li won't display, moving the brackets around to see if it is a logic error
 li.innerHTML = new_task_html;
-    }
 if(task_priority=="low"){
     li.classList.add("low-priority");
 }
@@ -34,7 +32,7 @@ todolist.push(newtdlitem);
 console.log(todolist);
 
 return false;
-});
+};
 
     document.addEventListener('click',function(event){
         element = event.target;
@@ -47,4 +45,5 @@ return false;
         if (element.className == 'completed'){
             element.parentElement.style.textDecoration = "line-through";
         }
-    });
+    })
+});

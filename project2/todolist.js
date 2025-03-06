@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let task_status = document.querySelector('input[name="task-status"]:checked').value;
     //creates the new task
     let new_task_html = `
-    <span>Title ${task_text}</span>
-   <span> Priority ${task_priority}</span>
-   <span> Status ${task_status}</span>
+    <span>Title:" ${task_text}"</span>
+   <span> Priority: ${task_priority}</span>
+   <span> Status: ${task_status}</span>
    <button class="remove">Remove</button>
    <button class="completed">Completed</button>`;
 

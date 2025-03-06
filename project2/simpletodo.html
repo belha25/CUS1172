@@ -1,61 +1,29 @@
 <!DOCTYPE html>
-<head>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const todolist = [];
-            document.querySelector("#new-task").onsubmit = function() {
-                //adds new task to the list and displays it
-                const li = document.createElement('li');
-                 let task_text = document.querySelector('#task-title').value;
-                 let new_task_html = `
-                    <span> ${task_text} </span>
-                    <button class="remove">Remove</button>
-                    <button class="completed">Completed</button>
-                 `;
-                li.innerHTML = new_task_html
-                document.querySelector("#todo").append(li);
-                const newtdlitem = task_text;
-                document.querySelector("#task-title").value = '';
-                todolist.push(newtdlitem);
-                console.log(todolist);
-                return false;
-
-            }
-            document.addEventListener('click',function(event){
-                element = event.target;
-                if (element.className == 'remove'){
-                    element.parentElement.remove();
-                    const index = todolist.indexOf(element.parentElement);
-                    todolist.splice(index,1);
-                    console.log(todolist);
-                }
-                if (element.className == 'completed'){
-                    element.parentElement.style.textDecoration = "line-through";
-                }
-            })
-        });
-
-    </script>
-</head>
-<body>
-    <h1>To-Do List</h1>
-    <ul id="todo">
-
-    </ul>
-    <form id="new-task">
-            <input id ="task-title" autocomplete="off" autofocus placeholder="New Task" type="text">
-            <select id ="task-priority" name="priority">
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-            </select>
-            <input type="radio" id="Not-started" name="task-status" value="Not-Started">
-            <label for="Not-Started">Not Started</label>
-            <input type="radio" id="In-Progress" name="task-status" value="In-Progress">
-            <label for="In-Progress">In Progress</label>
-            <input type="radio" id="Completed" name="task-status" value="Completed">
-            <label for="Completed">Completed</label>
-            <input id="submit" type="submit">
-    </form>
-    <p id="array"></p>
-</body>
+<html>
+    <head>
+        <script src = "todolist.js"></script>
+        <link rel="stylesheet"  href="./todocss.css">
+    </head>
+    <body>
+        <div class="row">
+            <h1>
+                To-Do List
+            </h1>
+        </div>
+        <ul id="todo">
+        </ul>
+        <form id="new-task">
+                <input id ="task-title" autocomplete="off" autofocus placeholder="New Task" type="text">
+                <select id ="task-priority" name="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <input type="radio" id="Pending" name="task-status" value="Pending">
+                <label for="Pending">In Progress</label>
+                <input type="radio" id="Completed" name="task-status" value="Completed">
+                <label for="Completed">Completed</label>
+                <input id="submit" type="submit">
+        </form>
+    </body>
+</html>

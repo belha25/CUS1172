@@ -1,4 +1,5 @@
 body{
+    text-align: center;
     cursor:url("cursor.png"), auto;
     background-color: rgb(143, 184, 234);
 }
